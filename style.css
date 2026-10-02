@@ -1,0 +1,377 @@
+body {
+    margin: 0;
+    background-color: rgb(255, 247, 240);
+    /*font-family: Arial, sans-serif;*/
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-circle {
+    width: 12px;
+    height: 12px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.header-section{
+    text-align: center;
+    padding: 30px 10px;
+}
+
+.header-section h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.header-section p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.skills-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+  .design {
+    min-height: 180px;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.design img {
+    width: 100%;
+    height: 100%;
+    /*object-fit: cover;*/
+    display: block;
+    border-radius: 10px;
+}
+
+.design h2 {
+    margin: 0;
+    color: white;
+}
+
+.graphic-design {
+    background-color: #755cde;
+    grid-column: span 2;
+}
+
+.ui-ux {
+    background-color: #f6a560;
+}
+
+.apps {
+    background-color: #f39e9e;
+}
+
+.illustrations {
+    background-color: #61c4b7;
+    grid-column: span 2;
+}
+
+.photography {
+    background-color: #eb7565;
+    grid-column: span 2;
+}
+
+.motion-graphics {
+    background-color: #552049;
+    grid-column: span 2;
+}
+
+.info {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.profile-picture {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto 50px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.info-text h2 {
+    font-size: 32px;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.info-text p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.button{
+    display: inline-block;
+    padding: 15px 25px;
+    background-color: #eb7565;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+}
+
+.my-work-section {
+    padding: 60px 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+.my-work-section h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.my-work-photos {
+   /* display: flex;
+    gap: 20px;
+    overflow: hidden;*/
+    display: flex;
+    gap: 14px;
+    overflow: hidden;
+    width: 100%;
+    padding-left: 53%;
+    transform: translateX(-35%);
+}
+
+.work-photo1 {
+   /* min-width: 80%;*/
+   /* height: 250px;
+    background-color: #ddd;
+    border-radius: 10px;
+    overflow: hidden;*/
+    flex: 0 0 20%;
+    height: 290px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.work-photo3{
+    flex: 0 0 25%;
+    height: 290px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.my-work-photos img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.work-section-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.work-section-buttons .button{
+    /*width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;*/
+    background-color: black!important;
+    color: white;
+    /*font-size: 20px;*/
+}
+
+
+
+.Booking {
+    margin: 50px 20px;
+    padding: 50px 30px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.Booking h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.Booking p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.Booking .button {
+    display: inline-block;
+    background-color: #eb7565;
+    color: white;
+}
+
+.logo-container{
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container .button {
+    background-color: black;
+}
+
+
+.logo-container .logo {
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-container .logo-circle {
+    width: 12px;
+    height: 12px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.info .button {
+    background-color: #EB7565;
+}
+
+.Booking .button {
+    background-color: #EB7565;
+}
+/* TABLET */
+@media screen and (min-width: 768px) {
+
+    .header-section{
+        padding: 60px 40px;
+    }
+
+    .skills-section {
+        grid-template-columns: repeat(4, 1fr);
+        max-width: 680px;
+        margin: auto;
+    }
+
+    .graphic-design {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+
+    .ui-ux,
+    .apps {
+        grid-column: span 1;
+    }
+
+    .illustrations,
+    .photography,
+    .motion-graphics {
+        grid-column: span 2;
+    }
+
+    .info {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        text-align: left;
+        padding: 80px 40px 40px;
+    }
+
+    .profile-picture {
+        flex-shrink: 0;
+    }
+
+    .info-text {
+        max-width: 400px;
+    }
+
+.work-photo1,.work-photo2,.work-photo3 {
+        flex: 0 0 45%;
+        height: 300px;
+    }
+
+    .Booking{
+        margin: 70px 40px;
+        padding: 60px;
+    }
+}
+
+
+/* DESKTOP */
+@media screen and (min-width: 1024px) {
+
+    header {
+        padding: 30px 60px;
+    }
+
+    .header-section {
+        padding: 70px 20px 50px;
+    }
+
+    .skills-section {
+        max-width: 1100px;
+    }
+
+    .info {
+        max-width: 1100px;
+        margin: auto;
+        gap: 80px;
+    }
+
+    .info-text {
+        max-width: 500px;
+    }
+
+    .work-photos {
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .work-photo1,.work-photo2,.work-photo3 {
+        flex: 0 0 30%;
+        height: 300px;
+    }
+
+    .Booking{
+        max-width: 1100px;
+        margin: 70px auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+    }
+
+    .logo-container{
+        padding: 30px 60px;
+    }
+}
